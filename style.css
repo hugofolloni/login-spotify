@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background:white;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-width: 200vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+header{
+    margin-top: -5px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+header span::before{
+    content:'';
+    position: absolute;
+    background: rgb(218, 211, 211);
+    height: 0.9px;
+    width: 100vw;
+    bottom: -20px;
+    left: -43.35vw;
+    border-radius: 5px; 
+}
+
+.social-fields{
+    margin-top: 1.5rem;
+}
+.social-fields a{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-fields .continuar {
+    text-align: center;
+}
+
+
+.social-fields .continuar span {
+    color: black;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: .3px;
+}
+
+.social-fields span {
+    color: rgba(0,0,0,0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+.social-fields a {
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    margin-top: 5vh;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+
+
+.social-fields .apple {
+    background:black ;
+    margin: 2vh;
+    border-radius:30px;
+    width: 400px;
+    height: 45px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-fields .apple:hover {
+    background: rgb(37, 37, 37);
+}
+
+.social-fields .facebook {
+    background: #2a5298;
+    margin: 2vh;
+    border-radius:30px;
+    width: 400px;
+    height: 45px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding-top: 0px;
+    color: white;
+}
+
+.social-fields .google {
+    background:white;
+    margin: 2vh;
+    border-radius:30px;
+    width: 400px;
+    height: 45px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding-top: 0px;
+    border: 2px solid rgb(88, 86, 86);
+    transition: all 0.3s ease;
+    color: rgb(88, 86, 86)
+}
+
+.social-fields .google:hover {
+    background:grey;
+}
+
+.social-fields .google:hover {
+    color: white;
+}
+
+.social-fields .telefone {
+    text-decoration: none;
+    background:white;
+    margin: 2vh;
+    border-radius:30px;
+    width: 400px;
+    height: 45px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    border: 2px solid rgb(88, 86, 86);
+    transition: all 0.3s ease;
+    color: rgb(88, 86, 86)
+}
+
+.social-fields .telefone:hover {
+    background:grey;
+}
+
+.social-fields .telefone:hover {
+    color: white;
+}
+
+
+main .ou{
+    margin-top: 0rem;
+    text-align: center;
+}
+
+main .ou span {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: black;
+    position: relative;
+}
+
+main .ou span::before, main .ou span::after {
+    position: absolute;
+    content:'';
+    height: .90px;
+    width: 200px;
+    bottom: 50%;
+    right: 30px;
+    background: rgb(218, 211, 211);
+}
+
+main .ou span::after {
+    left:30px;
+}
+
+form{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+    letter-spacing: 1px;
+} 
+
+form .email input{
+    margin-left: 2px;
+    border: solid .5px rgb(218, 211, 211);
+    border-radius: 1px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+}
+
+form .senha input{
+    margin-left: 2px;
+    border: solid .5px rgb(218, 211, 211);
+    border-radius: 1px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+}
+
+
+form .forgot span a{
+    text-decoration: none;
+    color:  rgb(88, 85, 85);
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 400;    
+}
+
+form .botao {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form .botao .caixa label{
+    color: rgb(173, 167, 167);
+    font-weight: 400; 
+    margin-right: 5px;
+}
+
+main form .botao input[type='submit']{
+    margin-left: 15vh;
+    padding: 0.4rem;
+    background: rgb(35, 110, 35);
+    cursor: pointer;
+    color: white;
+    font-size: .8rem;
+    font-weight: 650;
+    letter-spacing: 1.2px;
+    border-radius: 50px;
+    text-align: center;
+    width: 33.5vh;
+    height: 7.5vh;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+main form .botao input[type='submit']:hover {
+    background: rgb(53, 173, 53);
+}
+
+main form .botao::before{
+    content:'';
+    position: absolute;
+    background: rgb(218, 211, 211);
+    height: 0.9px;
+    width: 75vh;
+    bottom: -100px;
+    left: 70vh;
+    border-radius: 5px; 
+}
+
+main .criar{
+    margin-top: 50px;
+    text-align: center;
+}
+
+main .criar span{
+    font-weight: 600;
+}
+
+main .criar .inscrever{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background:white;
+    margin-top: 3vh;
+    border-radius:30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    width: 400px;
+    height: 45px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    border: 2px solid rgb(88, 86, 86);
+    transition: all 0.3s ease;
+    color: rgb(88, 86, 86);
+    margin-bottom: 2vh;
+}
+
+
+main .criar .inscrever:hover{
+    background: gray;
+    color: white;
+}
